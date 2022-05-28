@@ -9,3 +9,11 @@ let galleryLinks = document.querySelectorAll('#gallery a');
 //Finally, select all images inside the footer element and assign them to the variable footerImages.
 
 let footerImages = document.querySelectorAll('footer img');
+
+//Select the <input> element and assign its value to the variable inputValue.
+
+const inputValue = document.querySelector('#linkText').value
+
+//Next, set the text content of the <p> element with the class info to the value stored in inputValue.
+
+
