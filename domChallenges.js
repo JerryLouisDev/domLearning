@@ -16,4 +16,13 @@ const inputValue = document.querySelector('#linkText').value
 
 //Next, set the text content of the <p> element with the class info to the value stored in inputValue.
 
+//Currently, the event listener applies a yellow background color to the section element and its child elements when clicked. Add a condition that changes the background of the <input> elements only.
 
+let section = document.getElementsByTagName('section')[0];
+
+section.addEventListener('click', (e) => {
+  if(e.target.tagName === 'INPUT'){
+    e.target.style.backgroundColor = 'rgb(255, 255, 0)';
+    
+  }
+});
